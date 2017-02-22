@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="GeneralFrame.Service.CalculatorService" CodeBehind="GeneraFrameService.svc.cs" Factory="GeneralFrame.Service.WcfServiceFactory" %>

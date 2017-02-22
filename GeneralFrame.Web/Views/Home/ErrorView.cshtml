@@ -1,0 +1,18 @@
+﻿@model Exception
+
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Error</h2>
+@Html.Label("Unfortinatly we got error");
+<div>
+    @Html.DisplayNameFor(t => t.Source) : @Html.DisplayFor(t => t.Source)
+</div>
+<div>
+    @Html.DisplayNameFor(t => t.Message) : @Html.DisplayFor(t => t.Message)
+</div>
+<div>
+    @Html.DisplayNameFor(t => t.InnerException) : @Html.DisplayFor(t => t.InnerException)
+</div>

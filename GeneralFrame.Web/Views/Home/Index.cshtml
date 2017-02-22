@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>General frame App</h2>
+
+<script type="text/javascript" src="../../Scripts/CustomScripts.js"></script>
+
+<div>
+    @*@using(Html.BeginForm("Add", "Home"))*@
+    <div class="form-group">
+        <label class="sr-only" for="number1">Number 1</label>
+        <input id="number1" type="text" class="form-control" name="number1">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="number2">Number 2</label>
+        <input id="number2" type="text" class="form-control" name="number2">
+    </div>
+    <button id="operationAdd" class="btn btn-primary">Add numbers</button>
+
+</div>
+
+<div>
+    @Html.ActionLink("Get all results", "GetData")
+</div>

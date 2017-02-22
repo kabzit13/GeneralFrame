@@ -1,0 +1,41 @@
+﻿@model IEnumerable<GeneralFrame.Model.Models.GeneralResult>
+
+<h3>Results of computations</h3>
+<table class="table">
+
+    @if (Model != null)
+    {
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeStamp)
+            </th>
+            <th>
+                @Html.Label("Number 1")
+            </th>
+            <th>
+                @Html.Label("Number 2")
+            </th>
+            <th>
+                @Html.Label("Result")
+            </th>
+        </tr>
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeStamp)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BigNumber1.SourceString)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BigNumber2.SourceString)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Result.SourceString)
+                </td>
+            </tr>
+        }
+    }
+
+</table>
